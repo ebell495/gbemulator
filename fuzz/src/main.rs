@@ -67,7 +67,7 @@ fn fuzz_target(data: &[u8]) {
             let mut cpu = Cpu::new();
             let joypad = Joypad::new();
             let mut emulation = lib_gbemulation::emulation::Emulation::new();
-            for _ in 0..2 {
+            for _ in 0..100 {
                 emulation.cycle(&mut cpu, &mut mmu, &joypad);
             }
         },
