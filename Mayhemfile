@@ -1,0 +1,5 @@
+project: gbemulator
+target: lib_gbemulation-fuzz
+
+cmds:
+    - cmd: ./lib_gbemulation-fuzz @@
